@@ -566,7 +566,7 @@ body
     margin-bottom: 72px;
 }
 
-.section-four-item
+.section-four-list
 {
     display: flex;
     justify-content: space-between;
@@ -842,4 +842,97 @@ body
     border-radius: 4px;
     border: 1px solid var(--White);
     padding: 8px 0 8px 16px;
+}
+
+@media (max-width: 767px)
+{
+    body{
+        background-color: orange;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1157px)
+{
+   .container
+   {
+      max-width: 768px;
+   }
+   .section
+   {
+       padding: 90px 0;
+   }
+
+   .header-contact-list
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: end;
+       gap: 0;
+       padding: 12px;
+   }
+   
+   .svg-container
+   {
+        display: none;
+   }
+
+   .section-one-header
+   {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+   }
+   
+   .section-one-list
+   {
+        display: flex;
+        flex-wrap: wrap;
+   }
+
+   .section-one-item
+   {
+        flex-basis: calc((100% - 40px)/2);
+   }
+
+   .section-two
+   {
+        display: none;
+   }
+
+   .section-three-list
+   {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
+   }
+   
+   .section-four-list
+   {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: center;
+   }
+
+   .footer-container
+   {
+        display: flex;
+        flex-wrap: wrap;
+   }
+
+   .footer-soc-med
+   {
+        position: relative;
+        left: -92px;
+   }
+
+   .footer-subscription
+   {
+        margin-top: 72px;
+        position: relative;
+        left: -107px;
+   }
 }

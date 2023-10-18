@@ -1,4 +1,7 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-10/15/2023
-Finished styling the forms
+10/17/2023
+Styling the tablet layout (65%)
+
+10/18/2023
+Finished the tablet layout
