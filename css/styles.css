@@ -111,7 +111,7 @@ body
 .image
 {
     display: block;
-    max-width: 100%; 
+    width: 100%; 
     height: auto;
 }
 
@@ -137,6 +137,7 @@ body
 .mobile-menu
 {
     display: none;
+    z-index: 2;
 }
 
 .nav-icon
@@ -170,6 +171,7 @@ body
 
 .nav-link 
 {
+    position: relative;
     font-weight: 500;
     padding: 24px 0;
     transition-property: color;
@@ -677,6 +679,10 @@ body
     background-color: var(--Green);
 }
 /* Portfolio Page */
+.project.section
+{
+    padding: 64px 0;
+}
 
 .filter-list
 {
@@ -716,6 +722,7 @@ body
 
 .project-item
 {
+    width: calc((100% - 48px)/3);
     border: 1px solid var(--Cornflower);
     background-color: var(--White);
     cursor: pointer;
@@ -864,7 +871,6 @@ body
     .container
     {
         max-width: 428px;
-        border: 1px dashed green;
         padding: 0 15px;
         margin: 0 auto;
     }
@@ -891,6 +897,9 @@ body
         height: 100vh;
         background-color: var(--White);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .mobile-menu.is-open
@@ -917,6 +926,14 @@ body
         align-items: start;
         gap: 40px;
         margin: 5rem 3rem;
+    }
+
+    .cta-contact 
+    {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
     }
 
     .cta 
@@ -985,6 +1002,22 @@ body
         display: flex;
         flex-wrap: wrap;
         gap: 72px 0;
+    }
+
+    .project.section
+    {
+        padding: 56px 0;
+    }
+
+    .project-item
+    {
+        width: 100%;
+    }
+
+    .filter-list
+    {
+        flex-wrap: wrap;
+        justify-content: start;
     }
 
     .footer-container
@@ -1093,6 +1126,11 @@ body
         flex-wrap: wrap;
         gap: 72px 24px;
         justify-content: center;
+   }
+
+   .project-item
+   {
+        width: calc((100% - 24px)/2);
    }
 
    .footer-container

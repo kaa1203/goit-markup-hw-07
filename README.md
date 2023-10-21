@@ -8,3 +8,9 @@ Finished the tablet layout
 
 10/19/2023
 Styling the mobile layout (80%)
+
+10/20/2023
+Finished the mobile layout
+
+10/21/2023
+Update some style
