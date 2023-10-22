@@ -739,7 +739,6 @@ body
 .project-box
 {
     position: relative;
-    width: 360px;
     height: 300px;
     overflow: hidden;
 }
